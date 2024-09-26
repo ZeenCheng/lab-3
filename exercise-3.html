@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>My exercise3 test page</title>
+    <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans"
+     rel="stylesheet" />
+  </head>
+  <body>
+    <h1>push the button to generate a random integer between 1 and 100</h1>
+    <!-- add button -->
+    <button onclick="showRandomInt()">random integer </button>
+
+    <p id="randomNumber"></p>
+    <script src="js-3.js"></script>
+    <script>
+        // 调用 randomInt 函数
+        function showRandomInt() {
+            document.getElementById('randomNumber').innerText = randomInt();
+        }
+    </script>
+  </body>
+</html>

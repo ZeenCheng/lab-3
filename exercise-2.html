@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigator exercise</title>
+</head>
+<body>
+    <h1>check the language of the browser</h1>
+    <button onclick="checkLanguage()">check the language</button>
+
+    <script>
+        function checkLanguage() {
+            // get the language
+            const userLanguage = navigator.language;
+
+            // display
+            alert(`the language of the browser is :${userLanguage}`);
+        }
+    </script>
+    <h1>check the name of the browser</h1>
+    <button onclick="checkBrowserName()">check the name of the browser</button>
+
+    <script>
+        function checkBrowserName() {
+            // get the name
+            const browserName = navigator.appName;
+
+            // display
+            alert(`the name of the browser is :${browserName}`);
+        }
+    </script>
+</body>
+</html>
